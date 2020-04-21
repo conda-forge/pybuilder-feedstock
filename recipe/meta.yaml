@@ -1,5 +1,5 @@
 {% set name = "pybuilder" %}
-{% set version = "0.11.17" %}
+{% set version = "0.12.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ea740e0c4794935a401b4f19d67b34c660d6f0147bb135c6918a5c8c563dade9
+  sha256: ba26c58402045774e9590c459caec87132f77327ecb24b61ca4cfba2194259ff
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
-  skip: True  # [py==37]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true  # [py==37]
 
 requirements:
   build:
@@ -35,7 +35,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: pybuilder/LICENSE
-  summary: 'PyBuilder is a software build tool written in 100% pure Python, mainly targeting Python applications.'
+  summary: PyBuilder is a software build tool written in 100% pure Python, mainly targeting Python applications.
   description: |
     PyBuilder is based on the concept of dependency based programming,
     but it also comes with a powerful plugin mechanism, allowing the
