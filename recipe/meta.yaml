@@ -27,7 +27,7 @@ test:
     - pybuilder
     - pybuilder.core
   commands:
-    - pyb --help
+    - pyb --help  # [unix]
 
 about:
   home: http://pybuilder.github.io/
