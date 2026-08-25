@@ -1,13 +1,13 @@
 {% set name = "pybuilder" %}
-{% set version = "0.13.20" %}
+{% set version = "0.13.21" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 76c3746f16cbb1dabd60f171ade58fd0b17f069711d6e87b9af01f1b1c74dc29
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 48cad11216a3bb4afcf9097032510890590e17ea8b97cb5379dc4bd78d69412f
 
 build:
   number: 0
