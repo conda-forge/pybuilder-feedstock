@@ -1,5 +1,5 @@
 {% set name = "pybuilder" %}
-{% set version = "0.13.21" %}
+{% set version = "0.13.23" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 48cad11216a3bb4afcf9097032510890590e17ea8b97cb5379dc4bd78d69412f
+  sha256: 3ab8f4b5e6bea67cb4ab7f5fe067d5dc75fb2d3507a257096d1fc805c7e6235b
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
